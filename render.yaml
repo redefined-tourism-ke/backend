@@ -1,0 +1,17 @@
+
+services:
+  - type: web
+    name: tourism-ai-project
+    env: node
+    buildCommand: pnpm install
+    startCommand: node Server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: MONGO_URI
+        value: <your-production-mongodb-uri>
+      - key: MONGO_URI_DEV
+        value: <your-development-mongodb-uri>
+    autoDeploy: true
