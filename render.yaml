@@ -11,7 +11,7 @@ services:
       - key: PORT
         value: 10000
       - key: MONGO_URI
-        value: <your-production-mongodb-uri>
+        value: MONGODB_URI=mongodb+srv://<mongodbuser>:<mongodbuser>@cluster0.fzicuak.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
       - key: MONGO_URI_DEV
-        value: <your-development-mongodb-uri>
+        value: MONGODB_URI=mongodb+srv://<mongodbuser>:<mongodbuser>@cluster0.fzicuak.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
     autoDeploy: true
