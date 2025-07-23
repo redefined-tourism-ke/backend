@@ -3,7 +3,7 @@ services:
   - type: web
     name: tourism-ai-project
     env: node
-    buildCommand: pnpm install
+    buildCommand: pnpm install --no-frozen-lockfile
     startCommand: node Server.js
     envVars:
       - key: NODE_ENV
